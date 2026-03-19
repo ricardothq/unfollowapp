@@ -1,6 +1,6 @@
-// Función para validar el nombre del archivo
+
 const validarArchivo = (inputElement, nombreCorrecto) => {
-    const label = inputElement.previousElementSibling; // Selecciona el <label> que está justo arriba
+    const label = inputElement.previousElementSibling;
     const archivo = inputElement.files[0];
 
     if (!archivo) return;
@@ -14,7 +14,7 @@ const validarArchivo = (inputElement, nombreCorrecto) => {
     }
 };
 
-// Escuchamos cuando el usuario selecciona archivos
+
 document.getElementById('followersInput').addEventListener('change', function() {
     validarArchivo(this, 'followers_1.json');
 });
@@ -43,7 +43,6 @@ document.getElementById('analyzeBtn').addEventListener('click', async () => {
     const dataFollowers = await readJson(followersFile);
     const dataFollowing = await readJson(followingFile);
 
-    // Lógica similar a la que usamos en Python
     const seguidores = new Set(dataFollowers.map(item => item.string_list_data[0].value));
     
     const listaResultados = document.getElementById('list');
