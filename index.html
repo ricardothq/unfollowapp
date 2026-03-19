@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">UnfollowApp</h1>
+        <p style="text-align: center;">Sube tus archivos JSON de Instagram</p>
+        
+        <div class="upload-section">
+            <label>Seguidores (followers_1.json):</label>
+            <input type="file" id="followersInput" accept=".json">
+            
+            <label>Seguidos (following.json):</label>
+            <input type="file" id="followingInput" accept=".json">
+        </div>
+
+        <button id="analyzeBtn">Analizar Datos</button>
+
+        <div id="result" class="hidden">
+            <div class="counter-badge">
+                <span id="totalCount">0</span> personas no te siguen de vuelta
+            </div>
+            <h2>Lista de usuarios:</h2>
+            <ul id="list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
