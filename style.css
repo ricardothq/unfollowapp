@@ -55,7 +55,7 @@ li {
 }
 
 .counter-badge {
-    background-color: #ff4b4b; /* Un rojo que llame la atención */
+    background-color: #ff4b4b;
     color: white;
     padding: 15px;
     border-radius: 8px;
@@ -70,18 +70,16 @@ li {
     display: block;
 }
 
-/* Clases para validación visual */
 .text-success {
-    color: #4ade80 !important; /* Verde brillante */
+    color: #4ade80 !important; 
     font-weight: bold;
 }
 
 .text-error {
-    color: #ff4b4b !important; /* Rojo */
+    color: #ff4b4b !important; 
     font-weight: bold;
 }
 
-/* Un pequeño efecto para que los labels se vean mejor */
 label {
     transition: color 0.3s ease;
     display: block;
