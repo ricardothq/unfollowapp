@@ -12,14 +12,11 @@
         <p style="text-align: center;">Sube tus archivos JSON de Instagram</p>
         
         <div class="upload-section">
-            <label>Seguidores (followers_1.json):</label>
-            <input type="file" id="followersInput" accept=".json">
-            
-            <label>Seguidos (following.json):</label>
-            <input type="file" id="followingInput" accept=".json">
+            <label id="zipLabel">Archivo exportado (.zip):</label>
+            <input type="file" id="zipInput" accept=".zip">
         </div>
 
-        <button id="analyzeBtn">Analizar Datos</button>
+        <button id="analyzeBtn">Extraer y Analizar Datos</button>
 
         <div id="result" class="hidden">
             <div class="counter-badge">
@@ -29,6 +26,7 @@
             <ul id="list"></ul>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
